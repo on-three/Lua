@@ -40,16 +40,12 @@ LOCAL_SRC_FILES := $(SRC)/lapi.c \
                    $(SRC)/ltm.c \
                    $(SRC)/lundump.c \
                    $(SRC)/lvm.c \
-                   $(SRC)/lzio.c
-
-#LOCAL_LDLIBS    := -Llibs/armeabi
+                   $(SRC)/lzio.c \
+                   $(SRC)/lutf8lib.c
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/$(SRC)
 
 LOCAL_EXPORT_C_INCLUDES += $(LOCAL_PATH)/$(SRC)
 LOCAL_EXPORT_CFLAGS += $(LOCAL_CFLAGS)
-
-#LOCAL_WHOLE_STATIC_LIBRARIES := libogg openal tremor
-#LOCAL_EXPORT_LDLIBS     := -lOpenSLES -ldl -llog
 
 include $(BUILD_STATIC_LIBRARY)
